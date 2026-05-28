@@ -1,14 +1,17 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { boundsOf, normalizeVector, polygonArea, segmentLength } from '../lib/geometry';
 import { ROOM_CATEGORIES } from '../lib/roomCategories';
-import type { CameraPreset, FloorplanModel, LayerVisibility, Point } from '../lib/types';
+import type { CameraPreset, FloorplanModel, LayerVisibility, Point, Vec3 } from '../lib/types';
 
 interface Props {
   model: FloorplanModel;
   layers?: LayerVisibility;
   cameraAngle?: CameraAngleId;
   cameraPreset?: CameraPreset | null;
+  interactive?: boolean;
+  onCameraChange?: (position: Vec3, target: Vec3) => void;
 }
 
 export type CameraAngleId = 'overview' | 'top' | 'entry' | 'diagonal' | 'low';
@@ -57,7 +60,7 @@ export const CAMERA_ANGLE_OPTIONS: Array<{
   },
 ];
 
-export function ThreePreview({ model, layers, cameraAngle = 'overview', cameraPreset = null }: Props) {
+export function ThreePreview({ model, layers, cameraAngle = 'overview', cameraPreset = null, interactive = false, onCameraChange }: Props) {
   const hostRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -220,6 +223,29 @@ export function ThreePreview({ model, layers, cameraAngle = 'overview', cameraPr
     const render = () => renderer.render(scene, camera);
     render();
 
+    let controls: OrbitControls | null = null;
+    let animId = 0;
+    if (interactive) {
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+      controls.target.set(0, 0, 0);
+      controls.addEventListener('change', () => {
+        if (onCameraChange) {
+          onCameraChange(
+            [camera.position.x, camera.position.y, camera.position.z],
+            [controls!.target.x, controls!.target.y, controls!.target.z],
+          );
+        }
+      });
+      const animate = () => {
+        animId = requestAnimationFrame(animate);
+        controls!.update();
+        render();
+      };
+      animate();
+    }
+
     const resize = () => {
       const nextWidth = host.clientWidth || width;
       const nextHeight = host.clientHeight || height;
@@ -240,6 +266,8 @@ export function ThreePreview({ model, layers, cameraAngle = 'overview', cameraPr
     observer.observe(host);
 
     return () => {
+      if (animId) cancelAnimationFrame(animId);
+      controls?.dispose();
       observer.disconnect();
       scene.traverse((object) => {
         if (object instanceof THREE.Mesh) {
@@ -252,7 +280,7 @@ export function ThreePreview({ model, layers, cameraAngle = 'overview', cameraPr
       renderer.dispose();
       host.innerHTML = '';
     };
-  }, [model, layers, cameraAngle, cameraPreset]);
+  }, [model, layers, cameraAngle, cameraPreset, interactive, onCameraChange]);
 
   return <div className="three-preview" ref={hostRef} />;
 }

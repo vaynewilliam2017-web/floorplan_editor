@@ -3,6 +3,7 @@ import { BoxSelect, Cuboid, Download, FileJson, Grid2X2, RefreshCw, RotateCcw, R
 import { CameraInspector } from './components/CameraInspector';
 import { CanvasDock } from './components/CanvasDock';
 import { CanvasRulers } from './components/CanvasRulers';
+import { PropertiesDrawer } from './components/PropertiesDrawer';
 import { FloorplanStage } from './components/FloorplanStage';
 import { LayerPanel } from './components/LayerPanel';
 import { ModelCanvas } from './components/ModelCanvas';
@@ -59,15 +60,87 @@ export function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const model = store.model;
+
   useEffect(() => {
     const shouldIgnore = (target: EventTarget | null) => {
       if (!(target instanceof HTMLElement)) return false;
       return Boolean(target.closest('input, textarea, select, [contenteditable="true"]'));
     };
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.code !== 'Space' || shouldIgnore(event.target)) return;
-      event.preventDefault();
-      setActiveTool('pan');
+      if (shouldIgnore(event.target)) return;
+
+      if (event.code === 'Space') {
+        event.preventDefault();
+        setActiveTool('pan');
+        return;
+      }
+
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        store.setSelection(null);
+        return;
+      }
+
+      const isMeta = event.ctrlKey || event.metaKey;
+      if (isMeta && event.key.toLowerCase() === 'z') {
+        event.preventDefault();
+        if (event.shiftKey) {
+          store.redo();
+        } else {
+          store.undo();
+        }
+        return;
+      }
+      if (isMeta && (event.key.toLowerCase() === 'y' || event.key.toLowerCase() === 'r')) {
+        event.preventDefault();
+        store.redo();
+        return;
+      }
+
+      if (event.key === 'Delete' || event.key === 'Backspace') {
+        event.preventDefault();
+        const sel = store.selection;
+        if (!sel) return;
+        if (sel.type === 'wall') {
+          store.commitOperation({ id: createOperationId('delete_wall'), type: 'delete_wall', source: 'user', targetId: sel.id, payload: {} });
+        } else if (sel.type === 'room') {
+          store.commitOperation({ id: createOperationId('delete_room'), type: 'delete_room', source: 'user', targetId: sel.id, payload: {} });
+        } else if (sel.type === 'opening') {
+          store.commitOperation({ id: createOperationId('delete_opening'), type: 'delete_opening', source: 'user', targetId: sel.id, payload: {} });
+        } else if (sel.type === 'furniture') {
+          store.commitOperation({ id: createOperationId('delete_furniture'), type: 'delete_furniture', source: 'user', targetId: sel.id, payload: {} });
+        }
+        store.setSelection(null);
+        return;
+      }
+
+      const nudgeStep = model?.source.worldUnit === 'mm' ? 10 : 1;
+      if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        event.preventDefault();
+        const sel = store.selection;
+        if (!sel || !model) return;
+        const dx = event.key === 'ArrowLeft' ? -nudgeStep : event.key === 'ArrowRight' ? nudgeStep : 0;
+        const dy = event.key === 'ArrowUp' ? -nudgeStep : event.key === 'ArrowDown' ? nudgeStep : 0;
+        if (sel.type === 'wall') {
+          store.commitOperation({ id: createOperationId('move_wall'), type: 'move_wall', source: 'user', targetId: sel.id, payload: { offset: [dx, dy] } });
+        } else if (sel.type === 'room') {
+          store.commitOperation({ id: createOperationId('move_room'), type: 'move_room', source: 'user', targetId: sel.id, payload: { offset: [dx, dy] } });
+        } else if (sel.type === 'furniture') {
+          const item = model.furniture.find((f) => f.id === sel.id);
+          if (item) {
+            store.commitOperation({ id: createOperationId('move_furniture'), type: 'move_furniture', source: 'user', targetId: sel.id, payload: { position: [item.position[0] + dx, item.position[1] + dy] } });
+          }
+        } else if (sel.type === 'opening') {
+          const opening = model.openings.find((o) => o.id === sel.id);
+          if (opening) {
+            const center: Point = [(opening.segment[0][0] + opening.segment[1][0]) / 2 + dx, (opening.segment[0][1] + opening.segment[1][1]) / 2 + dy];
+            const nearest = nearestWallForOpening(center, model);
+            store.commitOperation({ id: createOperationId('move_opening_on_wall'), type: 'move_opening_on_wall', source: 'user', targetId: sel.id, payload: { wallId: nearest?.wallId || opening.wallId || '', center } });
+          }
+        }
+        return;
+      }
     };
     const handleKeyUp = (event: KeyboardEvent) => {
       if (event.code !== 'Space') return;
@@ -80,9 +153,7 @@ export function App() {
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
     };
-  }, [setActiveTool]);
-
-  const model = store.model;
+  }, [setActiveTool, store]);
 
   const toggleLayer = (layer: LayerKey) => {
     setLayerVisibility((current) => ({ ...current, [layer]: !current[layer] }));
@@ -258,8 +329,6 @@ export function App() {
 
   const changeStage = (stage: EditorStage) => {
     setEditorStage(stage);
-    store.setSelection(null);
-    store.setTool('select');
   };
 
   if (loadError) {
@@ -352,7 +421,7 @@ export function App() {
 
         <section className="canvas-column">
           {editorStage === 'model' ? (
-            <ModelCanvas key={`${editorStage}-${modelRebuildVersion}`} model={model} layers={layerVisibility} showExportActions={false} />
+            <ModelCanvas key={`${editorStage}-${modelRebuildVersion}`} model={model} layers={layerVisibility} showExportActions={false} onCommit={store.commitOperation} />
           ) : (
             <>
               <FloorplanStage
@@ -376,13 +445,15 @@ export function App() {
                 onDropFurnitureSymbol={addFurnitureAt}
               />
               <CanvasRulers model={model} viewport={store.viewport} />
-              <CanvasDock model={model} selection={store.selection} onClose={() => store.setSelection(null)} onCommit={store.commitOperation} />
+              <CanvasDock model={model} selection={store.selection} />
+              <PropertiesDrawer model={model} selection={store.selection} onClose={() => store.setSelection(null)} onCommit={store.commitOperation} />
             </>
           )}
           <div className="statusbar">
             <span>World unit: {model.source.worldUnit === 'mm' ? 'millimeters' : 'source pixels'}</span>
             <span>Viewport scale: {store.viewport.scale.toFixed(2)}x</span>
-            <span>Mode: Select</span>
+            <span>Mode: {store.tool}</span>
+            <span>{store.selection ? `Selected: ${store.selection.type}` : 'Nothing selected'}</span>
             <span>Hold Space: Pan</span>
             <span>{model.source.calibrated ? 'Calibrated' : 'Uncalibrated temporary scale'}</span>
           </div>

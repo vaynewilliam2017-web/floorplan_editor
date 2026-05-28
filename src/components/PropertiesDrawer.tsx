@@ -134,6 +134,23 @@ export function PropertiesDrawer({ model, selection, onClose, onCommit }: Props)
             <option value="non_bearing">Non-bearing</option>
             <option value="fixed">Fixed</option>
           </select>
+          <button
+            className="danger-button"
+            type="button"
+            onClick={() => {
+              onCommit({
+                id: createOperationId('delete_wall'),
+                type: 'delete_wall',
+                source: 'user',
+                targetId: selectedWall.id,
+                payload: {},
+              });
+              onClose();
+            }}
+          >
+            <Trash2 size={15} />
+            Delete wall
+          </button>
         </div>
       )}
 
@@ -167,6 +184,23 @@ export function PropertiesDrawer({ model, selection, onClose, onCommit }: Props)
               <Plus size={14} />
             </button>
           </div>
+          <button
+            className="danger-button"
+            type="button"
+            onClick={() => {
+              onCommit({
+                id: createOperationId('delete_opening'),
+                type: 'delete_opening',
+                source: 'user',
+                targetId: selectedOpening.id,
+                payload: {},
+              });
+              onClose();
+            }}
+          >
+            <Trash2 size={15} />
+            Delete opening
+          </button>
         </div>
       )}
 
@@ -211,6 +245,23 @@ export function PropertiesDrawer({ model, selection, onClose, onCommit }: Props)
               </option>
             ))}
           </select>
+          <button
+            className="danger-button"
+            type="button"
+            onClick={() => {
+              onCommit({
+                id: createOperationId('delete_room'),
+                type: 'delete_room',
+                source: 'user',
+                targetId: selectedRoom.id,
+                payload: {},
+              });
+              onClose();
+            }}
+          >
+            <Trash2 size={15} />
+            Delete room
+          </button>
         </div>
       )}
 

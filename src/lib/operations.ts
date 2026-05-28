@@ -311,6 +311,22 @@ export function reduceOperation(model: FloorplanModel, operation: Operation): Fl
         ...model,
         activeCameraPresetId: operation.payload.cameraPresetId,
       };
+    case 'delete_wall':
+      return {
+        ...model,
+        walls: model.walls.filter((wall) => wall.id !== operation.targetId),
+        openings: model.openings.filter((opening) => opening.wallId !== operation.targetId),
+      };
+    case 'delete_room':
+      return {
+        ...model,
+        rooms: model.rooms.filter((room) => room.id !== operation.targetId),
+      };
+    case 'delete_opening':
+      return {
+        ...model,
+        openings: model.openings.filter((opening) => opening.id !== operation.targetId),
+      };
     default:
       return model;
   }

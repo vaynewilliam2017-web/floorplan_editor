@@ -405,6 +405,27 @@ export type Operation =
       source: OperationSource;
       targetId: 'floorplan';
       payload: { cameraPresetId: string | null };
+    }
+  | {
+      id: string;
+      type: 'delete_wall';
+      source: OperationSource;
+      targetId: string;
+      payload: Record<string, never>;
+    }
+  | {
+      id: string;
+      type: 'delete_room';
+      source: OperationSource;
+      targetId: string;
+      payload: Record<string, never>;
+    }
+  | {
+      id: string;
+      type: 'delete_opening';
+      source: OperationSource;
+      targetId: string;
+      payload: Record<string, never>;
     };
 
 export interface ValidationIssue {
