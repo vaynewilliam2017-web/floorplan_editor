@@ -1,0 +1,3504 @@
+{
+  "schema": "FloorplanJSON",
+  "version": 1,
+  "world": {
+    "unit": "source_px",
+    "calibrated": false,
+    "source_px_to_mm": null,
+    "world_per_source_px": 1.0,
+    "scale_basis": "none",
+    "note": "No reliable visible scale; geometry uses source image pixels."
+  },
+  "canvas": {
+    "image_path": "D:\\Hanno\\00_active_projects\\plan-to-render\\cad_recognizition\\inputs\\resized\\1779073174278_1260.jpg",
+    "image_size_px": [
+      1064,
+      667
+    ],
+    "coordinate_unit": "source_px"
+  },
+  "source": {
+    "image_path": "D:\\Hanno\\00_active_projects\\plan-to-render\\cad_recognizition\\inputs\\resized\\1779073174278_1260.jpg",
+    "image_size_px": [
+      1064,
+      667
+    ],
+    "coordinate_unit": "px",
+    "transform": {
+      "source_unit": "px",
+      "world_unit": "source_px",
+      "world_per_px": 1.0,
+      "mm_per_px": null,
+      "calibrated": false,
+      "evidence": ""
+    }
+  },
+  "calibration": {
+    "px_to_mm": null,
+    "scale_confidence": 0.0,
+    "scale_evidence": ""
+  },
+  "boundary": {
+    "id": "boundary_001",
+    "points": [
+      [
+        264.0,
+        57.0
+      ],
+      [
+        955.0,
+        57.0
+      ],
+      [
+        955.0,
+        100.0
+      ],
+      [
+        1000.0,
+        100.0
+      ],
+      [
+        1000.0,
+        329.0
+      ],
+      [
+        903.0,
+        329.0
+      ],
+      [
+        903.0,
+        567.0
+      ],
+      [
+        399.0,
+        567.0
+      ],
+      [
+        399.0,
+        652.0
+      ],
+      [
+        71.0,
+        652.0
+      ],
+      [
+        71.0,
+        459.0
+      ],
+      [
+        38.0,
+        459.0
+      ],
+      [
+        38.0,
+        289.0
+      ],
+      [
+        71.0,
+        289.0
+      ],
+      [
+        71.0,
+        97.0
+      ],
+      [
+        264.0,
+        97.0
+      ],
+      [
+        264.0,
+        57.0
+      ]
+    ],
+    "confidence": 0.9,
+    "points_px": [
+      [
+        264.0,
+        57.0
+      ],
+      [
+        955.0,
+        57.0
+      ],
+      [
+        955.0,
+        100.0
+      ],
+      [
+        1000.0,
+        100.0
+      ],
+      [
+        1000.0,
+        329.0
+      ],
+      [
+        903.0,
+        329.0
+      ],
+      [
+        903.0,
+        567.0
+      ],
+      [
+        399.0,
+        567.0
+      ],
+      [
+        399.0,
+        652.0
+      ],
+      [
+        71.0,
+        652.0
+      ],
+      [
+        71.0,
+        459.0
+      ],
+      [
+        38.0,
+        459.0
+      ],
+      [
+        38.0,
+        289.0
+      ],
+      [
+        71.0,
+        289.0
+      ],
+      [
+        71.0,
+        97.0
+      ],
+      [
+        264.0,
+        97.0
+      ],
+      [
+        264.0,
+        57.0
+      ]
+    ]
+  },
+  "walls": [
+    {
+      "id": "wall_001",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          57.0
+        ],
+        [
+          955.0,
+          57.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          57.0
+        ],
+        [
+          955.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_002",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          955.0,
+          57.0
+        ],
+        [
+          955.0,
+          100.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          955.0,
+          57.0
+        ],
+        [
+          955.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_003",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          955.0,
+          100.0
+        ],
+        [
+          1000.0,
+          100.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          955.0,
+          100.0
+        ],
+        [
+          1000.0,
+          100.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_004",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          1000.0,
+          100.0
+        ],
+        [
+          1000.0,
+          329.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          1000.0,
+          100.0
+        ],
+        [
+          1000.0,
+          329.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_005",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          1000.0,
+          329.0
+        ],
+        [
+          903.0,
+          329.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          1000.0,
+          329.0
+        ],
+        [
+          903.0,
+          329.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_006",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          903.0,
+          329.0
+        ],
+        [
+          903.0,
+          567.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          903.0,
+          329.0
+        ],
+        [
+          903.0,
+          567.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_007",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          903.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          903.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_008",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          399.0,
+          567.0
+        ],
+        [
+          399.0,
+          652.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          399.0,
+          567.0
+        ],
+        [
+          399.0,
+          652.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_009",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          399.0,
+          652.0
+        ],
+        [
+          71.0,
+          652.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          399.0,
+          652.0
+        ],
+        [
+          71.0,
+          652.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_010",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          652.0
+        ],
+        [
+          71.0,
+          459.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          652.0
+        ],
+        [
+          71.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_011",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          38.0,
+          459.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          38.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_012",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          38.0,
+          459.0
+        ],
+        [
+          38.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          38.0,
+          459.0
+        ],
+        [
+          38.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_013",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          38.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          38.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_014",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          97.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          97.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_015",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          97.0
+        ],
+        [
+          264.0,
+          97.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          97.0
+        ],
+        [
+          264.0,
+          97.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_016",
+      "kind": "exterior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          57.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_017",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_018",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          289.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          289.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_019",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_020",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          57.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_021",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          567.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          567.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_022",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_023",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          558.0,
+          57.0
+        ],
+        [
+          558.0,
+          213.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          558.0,
+          57.0
+        ],
+        [
+          558.0,
+          213.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_024",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          558.0,
+          213.0
+        ],
+        [
+          509.0,
+          213.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          558.0,
+          213.0
+        ],
+        [
+          509.0,
+          213.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_025",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          558.0,
+          213.0
+        ],
+        [
+          620.0,
+          213.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          558.0,
+          213.0
+        ],
+        [
+          620.0,
+          213.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_026",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          685.0,
+          57.0
+        ],
+        [
+          685.0,
+          213.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          685.0,
+          57.0
+        ],
+        [
+          685.0,
+          213.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_027",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          264.0,
+          459.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          264.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_028",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          264.0,
+          459.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          264.0,
+          459.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_029",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          459.0
+        ],
+        [
+          264.0,
+          652.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          459.0
+        ],
+        [
+          264.0,
+          652.0
+        ]
+      ]
+    },
+    {
+      "id": "wall_030",
+      "kind": "interior",
+      "structural": "unknown",
+      "centerline": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ]
+      ],
+      "thickness_px": 12.0,
+      "height_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "centerline_px": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ]
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "id": "opening_001",
+      "type": "window",
+      "wall_id": "wall_001",
+      "segment": [
+        [
+          319.0,
+          57.0
+        ],
+        [
+          393.0,
+          57.0
+        ]
+      ],
+      "width_px": 74.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          319.0,
+          57.0
+        ],
+        [
+          393.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_002",
+      "type": "window",
+      "wall_id": "wall_001",
+      "segment": [
+        [
+          478.0,
+          57.0
+        ],
+        [
+          534.0,
+          57.0
+        ]
+      ],
+      "width_px": 56.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          478.0,
+          57.0
+        ],
+        [
+          534.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_003",
+      "type": "window",
+      "wall_id": "wall_001",
+      "segment": [
+        [
+          582.0,
+          57.0
+        ],
+        [
+          651.0,
+          57.0
+        ]
+      ],
+      "width_px": 69.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          582.0,
+          57.0
+        ],
+        [
+          651.0,
+          57.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_004",
+      "type": "window",
+      "wall_id": "wall_012",
+      "segment": [
+        [
+          38.0,
+          303.0
+        ],
+        [
+          38.0,
+          445.0
+        ]
+      ],
+      "width_px": 142.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          38.0,
+          303.0
+        ],
+        [
+          38.0,
+          445.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_005",
+      "type": "window",
+      "wall_id": "wall_010",
+      "segment": [
+        [
+          71.0,
+          500.0
+        ],
+        [
+          71.0,
+          608.0
+        ]
+      ],
+      "width_px": 108.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          71.0,
+          500.0
+        ],
+        [
+          71.0,
+          608.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_006",
+      "type": "window",
+      "wall_id": "wall_007",
+      "segment": [
+        [
+          424.0,
+          567.0
+        ],
+        [
+          889.0,
+          567.0
+        ]
+      ],
+      "width_px": 465.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          424.0,
+          567.0
+        ],
+        [
+          889.0,
+          567.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_007",
+      "type": "window",
+      "wall_id": "wall_004",
+      "segment": [
+        [
+          1000.0,
+          114.0
+        ],
+        [
+          1000.0,
+          315.0
+        ]
+      ],
+      "width_px": 201.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          1000.0,
+          114.0
+        ],
+        [
+          1000.0,
+          315.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_008",
+      "type": "door",
+      "wall_id": "wall_020",
+      "segment": [
+        [
+          453.0,
+          213.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ],
+      "width_px": 76.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          453.0,
+          213.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_009",
+      "type": "door",
+      "wall_id": "wall_022",
+      "segment": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          558.0,
+          289.0
+        ]
+      ],
+      "width_px": 105.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          558.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_010",
+      "type": "door",
+      "wall_id": "wall_026",
+      "segment": [
+        [
+          685.0,
+          213.0
+        ],
+        [
+          685.0,
+          289.0
+        ]
+      ],
+      "width_px": 76.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          685.0,
+          213.0
+        ],
+        [
+          685.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_011",
+      "type": "door",
+      "wall_id": "wall_022",
+      "segment": [
+        [
+          850.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ]
+      ],
+      "width_px": 53.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          850.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_012",
+      "type": "door",
+      "wall_id": "wall_027",
+      "segment": [
+        [
+          264.0,
+          303.0
+        ],
+        [
+          264.0,
+          445.0
+        ]
+      ],
+      "width_px": 142.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          264.0,
+          303.0
+        ],
+        [
+          264.0,
+          445.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_013",
+      "type": "door",
+      "wall_id": "wall_029",
+      "segment": [
+        [
+          264.0,
+          500.0
+        ],
+        [
+          264.0,
+          567.0
+        ]
+      ],
+      "width_px": 67.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          264.0,
+          500.0
+        ],
+        [
+          264.0,
+          567.0
+        ]
+      ]
+    },
+    {
+      "id": "opening_014",
+      "type": "door",
+      "wall_id": "wall_030",
+      "segment": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          331.0,
+          567.0
+        ]
+      ],
+      "width_px": 67.0,
+      "height_px": null,
+      "sill_px": null,
+      "confidence": 0.9,
+      "evidence": "",
+      "segment_px": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          331.0,
+          567.0
+        ]
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room_001",
+      "category": 3,
+      "name": "Bedroom",
+      "type": "bedroom",
+      "polygon": [
+        [
+          71.0,
+          97.0
+        ],
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          97.0
+        ]
+      ],
+      "label_point": [
+        167.0,
+        193.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          71.0,
+          97.0
+        ],
+        [
+          264.0,
+          97.0
+        ],
+        [
+          264.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          97.0
+        ]
+      ],
+      "label_point_px": [
+        167.0,
+        193.0
+      ]
+    },
+    {
+      "id": "room_002",
+      "category": 6,
+      "name": "Balcony",
+      "type": "balcony",
+      "polygon": [
+        [
+          38.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          459.0
+        ],
+        [
+          38.0,
+          459.0
+        ],
+        [
+          38.0,
+          289.0
+        ]
+      ],
+      "label_point": [
+        54.0,
+        374.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          38.0,
+          289.0
+        ],
+        [
+          71.0,
+          289.0
+        ],
+        [
+          71.0,
+          459.0
+        ],
+        [
+          38.0,
+          459.0
+        ],
+        [
+          38.0,
+          289.0
+        ]
+      ],
+      "label_point_px": [
+        54.0,
+        374.0
+      ]
+    },
+    {
+      "id": "room_003",
+      "category": 3,
+      "name": "Bedroom",
+      "type": "bedroom",
+      "polygon": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          264.0,
+          459.0
+        ],
+        [
+          264.0,
+          652.0
+        ],
+        [
+          71.0,
+          652.0
+        ],
+        [
+          71.0,
+          459.0
+        ]
+      ],
+      "label_point": [
+        167.0,
+        555.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          71.0,
+          459.0
+        ],
+        [
+          264.0,
+          459.0
+        ],
+        [
+          264.0,
+          652.0
+        ],
+        [
+          71.0,
+          652.0
+        ],
+        [
+          71.0,
+          459.0
+        ]
+      ],
+      "label_point_px": [
+        167.0,
+        555.0
+      ]
+    },
+    {
+      "id": "room_004",
+      "category": 0,
+      "name": "Living Room",
+      "type": "living",
+      "polygon": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          567.0
+        ],
+        [
+          264.0,
+          567.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ],
+      "label_point": [
+        358.0,
+        428.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          264.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          567.0
+        ],
+        [
+          264.0,
+          567.0
+        ],
+        [
+          264.0,
+          289.0
+        ]
+      ],
+      "label_point_px": [
+        358.0,
+        428.0
+      ]
+    },
+    {
+      "id": "room_005",
+      "category": 1,
+      "name": "Dining Room",
+      "type": "dining",
+      "polygon": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ],
+        [
+          903.0,
+          567.0
+        ],
+        [
+          453.0,
+          567.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ],
+      "label_point": [
+        678.0,
+        428.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          453.0,
+          289.0
+        ],
+        [
+          903.0,
+          289.0
+        ],
+        [
+          903.0,
+          567.0
+        ],
+        [
+          453.0,
+          567.0
+        ],
+        [
+          453.0,
+          289.0
+        ]
+      ],
+      "label_point_px": [
+        678.0,
+        428.0
+      ]
+    },
+    {
+      "id": "room_006",
+      "category": 4,
+      "name": "Kitchen",
+      "type": "kitchen",
+      "polygon": [
+        [
+          264.0,
+          57.0
+        ],
+        [
+          453.0,
+          57.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          264.0,
+          289.0
+        ],
+        [
+          264.0,
+          57.0
+        ]
+      ],
+      "label_point": [
+        358.0,
+        173.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          264.0,
+          57.0
+        ],
+        [
+          453.0,
+          57.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          264.0,
+          289.0
+        ],
+        [
+          264.0,
+          57.0
+        ]
+      ],
+      "label_point_px": [
+        358.0,
+        173.0
+      ]
+    },
+    {
+      "id": "room_007",
+      "category": 5,
+      "name": "Bathroom",
+      "type": "bathroom",
+      "polygon": [
+        [
+          453.0,
+          57.0
+        ],
+        [
+          558.0,
+          57.0
+        ],
+        [
+          558.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          57.0
+        ]
+      ],
+      "label_point": [
+        505.0,
+        173.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          453.0,
+          57.0
+        ],
+        [
+          558.0,
+          57.0
+        ],
+        [
+          558.0,
+          289.0
+        ],
+        [
+          453.0,
+          289.0
+        ],
+        [
+          453.0,
+          57.0
+        ]
+      ],
+      "label_point_px": [
+        505.0,
+        173.0
+      ]
+    },
+    {
+      "id": "room_008",
+      "category": 5,
+      "name": "Bathroom",
+      "type": "bathroom",
+      "polygon": [
+        [
+          558.0,
+          57.0
+        ],
+        [
+          685.0,
+          57.0
+        ],
+        [
+          685.0,
+          289.0
+        ],
+        [
+          558.0,
+          289.0
+        ],
+        [
+          558.0,
+          57.0
+        ]
+      ],
+      "label_point": [
+        621.0,
+        173.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          558.0,
+          57.0
+        ],
+        [
+          685.0,
+          57.0
+        ],
+        [
+          685.0,
+          289.0
+        ],
+        [
+          558.0,
+          289.0
+        ],
+        [
+          558.0,
+          57.0
+        ]
+      ],
+      "label_point_px": [
+        621.0,
+        173.0
+      ]
+    },
+    {
+      "id": "room_009",
+      "category": 2,
+      "name": "Master Bedroom",
+      "type": "bedroom",
+      "polygon": [
+        [
+          685.0,
+          57.0
+        ],
+        [
+          955.0,
+          57.0
+        ],
+        [
+          955.0,
+          100.0
+        ],
+        [
+          1000.0,
+          100.0
+        ],
+        [
+          1000.0,
+          329.0
+        ],
+        [
+          903.0,
+          329.0
+        ],
+        [
+          903.0,
+          289.0
+        ],
+        [
+          685.0,
+          289.0
+        ],
+        [
+          685.0,
+          57.0
+        ]
+      ],
+      "label_point": [
+        820.0,
+        173.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          685.0,
+          57.0
+        ],
+        [
+          955.0,
+          57.0
+        ],
+        [
+          955.0,
+          100.0
+        ],
+        [
+          1000.0,
+          100.0
+        ],
+        [
+          1000.0,
+          329.0
+        ],
+        [
+          903.0,
+          329.0
+        ],
+        [
+          903.0,
+          289.0
+        ],
+        [
+          685.0,
+          289.0
+        ],
+        [
+          685.0,
+          57.0
+        ]
+      ],
+      "label_point_px": [
+        820.0,
+        173.0
+      ]
+    },
+    {
+      "id": "room_010",
+      "category": 11,
+      "name": "Entry",
+      "type": "entry",
+      "polygon": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ],
+        [
+          399.0,
+          652.0
+        ],
+        [
+          264.0,
+          652.0
+        ],
+        [
+          264.0,
+          567.0
+        ]
+      ],
+      "label_point": [
+        331.0,
+        609.0
+      ],
+      "confidence": 0.9,
+      "polygon_px": [
+        [
+          264.0,
+          567.0
+        ],
+        [
+          399.0,
+          567.0
+        ],
+        [
+          399.0,
+          652.0
+        ],
+        [
+          264.0,
+          652.0
+        ],
+        [
+          264.0,
+          567.0
+        ]
+      ],
+      "label_point_px": [
+        331.0,
+        609.0
+      ]
+    }
+  ],
+  "columns": [],
+  "fixed_zones": [],
+  "uncertainties": [
+    {
+      "id": "u_001",
+      "target_ids": [
+        "wall_001",
+        "wall_002",
+        "wall_003",
+        "wall_004",
+        "wall_005",
+        "wall_006",
+        "wall_007",
+        "wall_008",
+        "wall_009",
+        "wall_010",
+        "wall_011",
+        "wall_012",
+        "wall_013",
+        "wall_014",
+        "wall_015",
+        "wall_016",
+        "wall_017",
+        "wall_018",
+        "wall_019",
+        "wall_020",
+        "wall_021",
+        "wall_022",
+        "wall_023",
+        "wall_024",
+        "wall_025",
+        "wall_026",
+        "wall_027",
+        "wall_028",
+        "wall_029",
+        "wall_030"
+      ],
+      "severity": "warning",
+      "message": "Load-bearing status is not reliable from the image and needs manual confirmation"
+    }
+  ],
+  "debug": {
+    "raw_model_json": {
+      "schema": "FloorplanJSON",
+      "version": 1,
+      "world": {
+        "unit": "source_px",
+        "calibrated": false,
+        "source_px_to_mm": null,
+        "world_per_source_px": 1.0,
+        "scale_basis": "none",
+        "note": "No reliable visible scale; geometry uses source image pixels."
+      },
+      "canvas": {
+        "image_path": "D:\\Hanno\\00_active_projects\\plan-to-render\\cad_recognizition\\inputs\\resized\\1779073174278_1260.jpg",
+        "image_size_px": [
+          1064,
+          667
+        ],
+        "coordinate_unit": "source_px"
+      },
+      "source": {
+        "image_path": "D:\\Hanno\\00_active_projects\\plan-to-render\\cad_recognizition\\inputs\\resized\\1779073174278_1260.jpg",
+        "image_size_px": [
+          1064,
+          667
+        ],
+        "coordinate_unit": "px",
+        "transform": {
+          "source_unit": "px",
+          "world_unit": "source_px",
+          "world_per_px": 1.0,
+          "mm_per_px": null,
+          "calibrated": false,
+          "evidence": ""
+        }
+      },
+      "calibration": {
+        "px_to_mm": null,
+        "scale_confidence": 0.0,
+        "scale_evidence": ""
+      },
+      "boundary": {
+        "id": "boundary_001",
+        "points": [
+          [
+            264,
+            57
+          ],
+          [
+            955,
+            57
+          ],
+          [
+            955,
+            100
+          ],
+          [
+            1000,
+            100
+          ],
+          [
+            1000,
+            329
+          ],
+          [
+            903,
+            329
+          ],
+          [
+            903,
+            567
+          ],
+          [
+            399,
+            567
+          ],
+          [
+            399,
+            652
+          ],
+          [
+            71,
+            652
+          ],
+          [
+            71,
+            459
+          ],
+          [
+            38,
+            459
+          ],
+          [
+            38,
+            289
+          ],
+          [
+            71,
+            289
+          ],
+          [
+            71,
+            97
+          ],
+          [
+            264,
+            97
+          ],
+          [
+            264,
+            57
+          ]
+        ],
+        "confidence": 0.9
+      },
+      "walls": [
+        {
+          "id": "wall_001",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              57
+            ],
+            [
+              955,
+              57
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_002",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              955,
+              57
+            ],
+            [
+              955,
+              100
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_003",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              955,
+              100
+            ],
+            [
+              1000,
+              100
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_004",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              1000,
+              100
+            ],
+            [
+              1000,
+              329
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_005",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              1000,
+              329
+            ],
+            [
+              903,
+              329
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_006",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              903,
+              329
+            ],
+            [
+              903,
+              567
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_007",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              903,
+              567
+            ],
+            [
+              399,
+              567
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_008",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              399,
+              567
+            ],
+            [
+              399,
+              652
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_009",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              399,
+              652
+            ],
+            [
+              71,
+              652
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_010",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              652
+            ],
+            [
+              71,
+              459
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_011",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              459
+            ],
+            [
+              38,
+              459
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_012",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              38,
+              459
+            ],
+            [
+              38,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_013",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              38,
+              289
+            ],
+            [
+              71,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_014",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              289
+            ],
+            [
+              71,
+              97
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_015",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              97
+            ],
+            [
+              264,
+              97
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_016",
+          "kind": "exterior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              97
+            ],
+            [
+              264,
+              57
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_017",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              97
+            ],
+            [
+              264,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_018",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              289
+            ],
+            [
+              264,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_019",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              289
+            ],
+            [
+              453,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_020",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              453,
+              289
+            ],
+            [
+              453,
+              57
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_021",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              453,
+              289
+            ],
+            [
+              453,
+              567
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_022",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              453,
+              289
+            ],
+            [
+              903,
+              289
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_023",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              558,
+              57
+            ],
+            [
+              558,
+              213
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_024",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              558,
+              213
+            ],
+            [
+              509,
+              213
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_025",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              558,
+              213
+            ],
+            [
+              620,
+              213
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_026",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              685,
+              57
+            ],
+            [
+              685,
+              213
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_027",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              289
+            ],
+            [
+              264,
+              459
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_028",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              71,
+              459
+            ],
+            [
+              264,
+              459
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_029",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              459
+            ],
+            [
+              264,
+              652
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "wall_030",
+          "kind": "interior",
+          "structural": "unknown",
+          "centerline": [
+            [
+              264,
+              567
+            ],
+            [
+              399,
+              567
+            ]
+          ],
+          "thickness_px": 12,
+          "height_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        }
+      ],
+      "openings": [
+        {
+          "id": "opening_001",
+          "type": "window",
+          "wall_id": "wall_001",
+          "segment": [
+            [
+              319,
+              57
+            ],
+            [
+              393,
+              57
+            ]
+          ],
+          "width_px": 74,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_002",
+          "type": "window",
+          "wall_id": "wall_001",
+          "segment": [
+            [
+              478,
+              57
+            ],
+            [
+              534,
+              57
+            ]
+          ],
+          "width_px": 56,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_003",
+          "type": "window",
+          "wall_id": "wall_001",
+          "segment": [
+            [
+              582,
+              57
+            ],
+            [
+              651,
+              57
+            ]
+          ],
+          "width_px": 69,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_004",
+          "type": "window",
+          "wall_id": "wall_012",
+          "segment": [
+            [
+              38,
+              303
+            ],
+            [
+              38,
+              445
+            ]
+          ],
+          "width_px": 142,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_005",
+          "type": "window",
+          "wall_id": "wall_010",
+          "segment": [
+            [
+              71,
+              500
+            ],
+            [
+              71,
+              608
+            ]
+          ],
+          "width_px": 108,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_006",
+          "type": "window",
+          "wall_id": "wall_007",
+          "segment": [
+            [
+              424,
+              567
+            ],
+            [
+              889,
+              567
+            ]
+          ],
+          "width_px": 465,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_007",
+          "type": "window",
+          "wall_id": "wall_004",
+          "segment": [
+            [
+              1000,
+              114
+            ],
+            [
+              1000,
+              315
+            ]
+          ],
+          "width_px": 201,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_008",
+          "type": "door",
+          "wall_id": "wall_020",
+          "segment": [
+            [
+              453,
+              213
+            ],
+            [
+              453,
+              289
+            ]
+          ],
+          "width_px": 76,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_009",
+          "type": "door",
+          "wall_id": "wall_022",
+          "segment": [
+            [
+              453,
+              289
+            ],
+            [
+              558,
+              289
+            ]
+          ],
+          "width_px": 105,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_010",
+          "type": "door",
+          "wall_id": "wall_026",
+          "segment": [
+            [
+              685,
+              213
+            ],
+            [
+              685,
+              289
+            ]
+          ],
+          "width_px": 76,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_011",
+          "type": "door",
+          "wall_id": "wall_022",
+          "segment": [
+            [
+              850,
+              289
+            ],
+            [
+              903,
+              289
+            ]
+          ],
+          "width_px": 53,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_012",
+          "type": "door",
+          "wall_id": "wall_027",
+          "segment": [
+            [
+              264,
+              303
+            ],
+            [
+              264,
+              445
+            ]
+          ],
+          "width_px": 142,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_013",
+          "type": "door",
+          "wall_id": "wall_029",
+          "segment": [
+            [
+              264,
+              500
+            ],
+            [
+              264,
+              567
+            ]
+          ],
+          "width_px": 67,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        },
+        {
+          "id": "opening_014",
+          "type": "door",
+          "wall_id": "wall_030",
+          "segment": [
+            [
+              264,
+              567
+            ],
+            [
+              331,
+              567
+            ]
+          ],
+          "width_px": 67,
+          "height_px": null,
+          "sill_px": null,
+          "confidence": 0.9,
+          "evidence": ""
+        }
+      ],
+      "rooms": [
+        {
+          "id": "room_001",
+          "category": 3,
+          "name": "Bedroom",
+          "type": "bedroom",
+          "polygon": [
+            [
+              71,
+              97
+            ],
+            [
+              264,
+              97
+            ],
+            [
+              264,
+              289
+            ],
+            [
+              71,
+              289
+            ],
+            [
+              71,
+              97
+            ]
+          ],
+          "label_point": [
+            167,
+            193
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_002",
+          "category": 6,
+          "name": "Balcony",
+          "type": "balcony",
+          "polygon": [
+            [
+              38,
+              289
+            ],
+            [
+              71,
+              289
+            ],
+            [
+              71,
+              459
+            ],
+            [
+              38,
+              459
+            ],
+            [
+              38,
+              289
+            ]
+          ],
+          "label_point": [
+            54,
+            374
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_003",
+          "category": 3,
+          "name": "Bedroom",
+          "type": "bedroom",
+          "polygon": [
+            [
+              71,
+              459
+            ],
+            [
+              264,
+              459
+            ],
+            [
+              264,
+              652
+            ],
+            [
+              71,
+              652
+            ],
+            [
+              71,
+              459
+            ]
+          ],
+          "label_point": [
+            167,
+            555
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_004",
+          "category": 0,
+          "name": "Living Room",
+          "type": "living",
+          "polygon": [
+            [
+              264,
+              289
+            ],
+            [
+              453,
+              289
+            ],
+            [
+              453,
+              567
+            ],
+            [
+              264,
+              567
+            ],
+            [
+              264,
+              289
+            ]
+          ],
+          "label_point": [
+            358,
+            428
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_005",
+          "category": 1,
+          "name": "Dining Room",
+          "type": "dining",
+          "polygon": [
+            [
+              453,
+              289
+            ],
+            [
+              903,
+              289
+            ],
+            [
+              903,
+              567
+            ],
+            [
+              453,
+              567
+            ],
+            [
+              453,
+              289
+            ]
+          ],
+          "label_point": [
+            678,
+            428
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_006",
+          "category": 4,
+          "name": "Kitchen",
+          "type": "kitchen",
+          "polygon": [
+            [
+              264,
+              57
+            ],
+            [
+              453,
+              57
+            ],
+            [
+              453,
+              289
+            ],
+            [
+              264,
+              289
+            ],
+            [
+              264,
+              57
+            ]
+          ],
+          "label_point": [
+            358,
+            173
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_007",
+          "category": 5,
+          "name": "Bathroom",
+          "type": "bathroom",
+          "polygon": [
+            [
+              453,
+              57
+            ],
+            [
+              558,
+              57
+            ],
+            [
+              558,
+              289
+            ],
+            [
+              453,
+              289
+            ],
+            [
+              453,
+              57
+            ]
+          ],
+          "label_point": [
+            505,
+            173
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_008",
+          "category": 5,
+          "name": "Bathroom",
+          "type": "bathroom",
+          "polygon": [
+            [
+              558,
+              57
+            ],
+            [
+              685,
+              57
+            ],
+            [
+              685,
+              289
+            ],
+            [
+              558,
+              289
+            ],
+            [
+              558,
+              57
+            ]
+          ],
+          "label_point": [
+            621,
+            173
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_009",
+          "category": 2,
+          "name": "Master Bedroom",
+          "type": "bedroom",
+          "polygon": [
+            [
+              685,
+              57
+            ],
+            [
+              955,
+              57
+            ],
+            [
+              955,
+              100
+            ],
+            [
+              1000,
+              100
+            ],
+            [
+              1000,
+              329
+            ],
+            [
+              903,
+              329
+            ],
+            [
+              903,
+              289
+            ],
+            [
+              685,
+              289
+            ],
+            [
+              685,
+              57
+            ]
+          ],
+          "label_point": [
+            820,
+            173
+          ],
+          "confidence": 0.9
+        },
+        {
+          "id": "room_010",
+          "category": 11,
+          "name": "Entry",
+          "type": "entry",
+          "polygon": [
+            [
+              264,
+              567
+            ],
+            [
+              399,
+              567
+            ],
+            [
+              399,
+              652
+            ],
+            [
+              264,
+              652
+            ],
+            [
+              264,
+              567
+            ]
+          ],
+          "label_point": [
+            331,
+            609
+          ],
+          "confidence": 0.9
+        }
+      ],
+      "columns": [],
+      "fixed_zones": [],
+      "uncertainties": [
+        {
+          "id": "u_001",
+          "target_ids": [
+            "wall_001",
+            "wall_002",
+            "wall_003",
+            "wall_004",
+            "wall_005",
+            "wall_006",
+            "wall_007",
+            "wall_008",
+            "wall_009",
+            "wall_010",
+            "wall_011",
+            "wall_012",
+            "wall_013",
+            "wall_014",
+            "wall_015",
+            "wall_016",
+            "wall_017",
+            "wall_018",
+            "wall_019",
+            "wall_020",
+            "wall_021",
+            "wall_022",
+            "wall_023",
+            "wall_024",
+            "wall_025",
+            "wall_026",
+            "wall_027",
+            "wall_028",
+            "wall_029",
+            "wall_030"
+          ],
+          "severity": "warning",
+          "message": "Load-bearing status is not reliable from the image and needs manual confirmation"
+        }
+      ]
+    }
+  }
+}
